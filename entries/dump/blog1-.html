@@ -1,0 +1,99 @@
+<article><h1>Plexos: A Desktop For The Web</h1>
+
+	<p>⠀I am tempted to capitalize it as <i>"PlexOS"</i>, but I think I prefer to keep everything focused, as it is <b>not </b>an operating system, though it tries to<i> look and feel</i> like one.</p>
+
+	<figure>
+		<img src="https://i.gyazo.com/46796c79ff7d02d931861dd29383d047.gif">
+		<figcaption>Pretty uncanny, right?<br></figcaption>
+	</figure>
+
+	<p>⠀In the most technical terms, Plexos is a <a href="https://en.wikipedia.org/wiki/WIMP_(computing)">WIMP interfaced</a> <a href="https://en.wikipedia.org/wiki/Bookmark_(digital)">internet bookmark manager</a> <a href="https://en.wikipedia.org/wiki/Web_application">web app</a>. Making it simple: it's a deeply customizable desktop environment for the browser. Even simpler: Windows but it's all internet, <b>free and open source</b>.</p>
+
+	<p>⠀At this point in time, I've been coding Plexos for more than 1 year; it's been the longest project I've ever worked on, and the only one I never abandoned. While I'm not releasing it yet, I estimate I'll be able to procure an early stable build, both for utility use and reliable development, sometime around May 2022, so I'm starting this blog to document my journey to release!</p>
+
+	<h2>Why Would I Use Plexos?</h2>
+
+	<p>⠀Whenever I want to pitch Plexos to my friends, I always center it around its bookmark utilities and the flexibility that it presents in managing, and interacting with them. It goes something like this: -*<i>ehem</i>*</p>
+
+	<p>⠀Have you ever raged at how inconvenient it becomes to keep indexing so many pages on your browser's bookmarks? You eventually get to the point where you've filled up the entire bar space and so that ominous drop list at the right starts to be scarier and scarier as time passes, to the point your best bet out of spiralling into insanity is to begin categorizing everything in folders. Most outrageously still, bookmark folders aren't really an escape to scary drop lists; you're just planting the seeds to grow more of them.</p>
+
+	<figure>
+		<img src="https://i.gyazo.com/4a9f8fdb8d887600c86bdb03014a033e.gif">
+		<figcaption>It's not even funny anymore<br></figcaption>
+	</figure>
+
+	<p>⠀And so, Plexos serves as a great alternative to index your web through an interfacing paradigm which most people are already familiar with: the <a href="https://en.wikipedia.org/wiki/Desktop_metaphor">desktop metaphor</a>. </p>
+
+	<p>⠀Thanks to this new found home for bookmarks to interface in just the same way your files do on your OS's explorer, whole new indexing possibilities that would otherwise be unbearable to try become manageable and more comfortable to navigate through Plexos's desktop. Some examples are:</p>
+
+	<ul>
+		<li>Having your own web image gallery, removing the necessity of downloading the cool pics you find directly to your hard drive just for ease of access.</li>
+		<li>Being able to preview not only favicons and names, but the contents themselves through iframes, a built-in image viewer and video/sound players able to reproduce content from different web services.</li>
+		<li>Bringing all of your files saved on different cloud service accounts into one place, organize them effortlessly just by pasting their links.</li>
+	</ul>
+
+	<p><i>⠀and more...</i></p>
+
+	<h2>So How Does Plexos Work?</h2>
+
+	<p>⠀First for the tech-savvy: Plexos counts with it's own <i>"file system"</i> running entirely on client-side JavaScript, where every folder is an object whose contents are stored within its key values, and each <i>"file"</i> is little more than a URL. This means all your data is stored within a single JS object (that would be the root folder), which can be stringified and saved to <code class="inline-code">localStorage</code> or be downloaded as a JSON file to then later be imported. Yes, I intend for Plexos to be a server-less app, and I'm also avoiding the use of any libraries whatsoever.</p>
+
+	<p>⠀Now for the average user: Plexos will be a webpage where you'll be able to instantly begin bookmarking your links similarly to how you create files on Windows, with no registration required. I intend there to be an extension for each browser so that you could effortlessly import all your already existing bookmarks into the app, and once you're there, hopefully you'll find yourself having a way more fun and aesthetic time visualizing and navigating your known web.</p>
+
+	<figure>
+		<img src="https://i.gyazo.com/ff77e5d9d236e373bf198dc22b86c6dc.gif">
+		<figcaption>Of course it comes with an explorer<br></figcaption>
+	</figure>
+
+	<p>⠀Not only an explorer: Plexos will be capable of running many other apps, both as isolated iframes AND as integrated apps that could interact with the system. In time, I'll make some extensive documentation for anyone to design their own Plexos native apps and be able to interact with system features. </p>
+
+	<p>⠀I am, however, very mindful of the fact that it'll be virtually impossible to create any sort of robust security measures for dubious or ill-intended apps, if it were the case that this project became big enough for people to have any incentive to make them. I'm aiming for some kind of curated list of verified community apps if that were the case, but let's not get ahead of ourselves.</p>
+
+	<h2>Plexos As A Metaphor</h2>
+
+	<p>⠀<i>*Please* read this paragraph until the end:</i> For the purpose of a good first impression, I've tactfully postponed, up until this point, <b>any</b> mention of the <i>metaverse </i>(please stay with me). Just as most people on the internet, I am not at all in favour of what the term has been repurposed for; that is, to refer to the most rancid uses of blockchain technology, like virtual currencies and NFT marketplaces, and if not those it'd be Facebook's phony new project.</p>
+
+	<p>⠀The thing is, the metaverse and its many concepts come from way back before crypto hedge funds and corporations appropriated it and ran with it, and I encourage you to dig and read about it, as there's a ton of inspiration to be found in it imo. <a href="https://en.wikipedia.org/wiki/Metaverse">Wikipedia</a> is always a good place to start.</p>
+
+	<figure>
+		<img src="https://i.gyazo.com/842d77ae2ebae79f17237371f44631df.gif">
+		<figcaption>With that out of the way...</figcaption>
+	</figure>
+
+	<p>⠀In the case of Plexos and how it relates to the metaverse, it shouldn't be immediately apparent, as it is not what we understand as a <i>"3D space"</i>, but in a way <b>it is</b>... just from a different angle. The term <i>"hypertext"</i>, coined by <a href="https://en.wikipedia.org/wiki/Ted_Nelson">Ted Nelson</a> in 1963, was conceived as a way to describe a new way to experience written language, where textual information would exist within a self-referenced, self-accessible network, the prefix <i>-hyper</i> denoting a new space through which nodes of data would link; a <a href="https://en.wikipedia.org/wiki/Hyperspace">hyperspace</a> if you will, a new <i>dimension</i> if I may.</p>
+
+	<p>⠀And so, Plexos tries to put a face to this meta highway of data, to have one place where all of your roads of most interest could converge; a vantage point beyond the documents for a more powerful view to the net.</p>
+
+	<figure>
+		<img src="https://i.gyazo.com/f108af541d41654ce72eb39e0436a8fc.gif">
+		<figcaption>Is this meta enough?</figcaption>
+	</figure>
+
+	<h6>⠀𝘐𝘧 𝘵𝘩𝘦 𝘮𝘦𝘳𝘦 𝘮𝘦𝘯𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘦 𝘮𝘦𝘵𝘢𝘷𝘦𝘳𝘴𝘦 𝘶𝘯𝘴𝘦𝘵𝘵𝘭𝘦𝘥 𝘺𝘰𝘶 𝘪𝘯 𝘢 𝘸𝘢𝘺 𝘺𝘰𝘶 𝘥𝘪𝘥 𝘯𝘰𝘵 𝘳𝘦𝘤𝘰𝘷𝘦𝘳 𝘧𝘳𝘰𝘮 𝘦𝘷𝘦𝘯 𝘴𝘵𝘪𝘭𝘭 𝘵𝘰 𝘵𝘩𝘪𝘴 𝘱𝘰𝘪𝘯𝘵 𝘪𝘯 𝘳𝘦𝘢𝘥𝘪𝘯𝘨 (𝘸𝘩𝘪𝘤𝘩 𝘐 𝘳𝘦𝘴𝘱𝘦𝘤𝘵), 𝘭𝘦𝘵 𝘮𝘦 𝘤𝘭𝘢𝘳𝘪𝘧𝘺: 𝘗𝘭𝘦𝘹𝘰𝘴 𝘪𝘵𝘴𝘦𝘭𝘧 𝘩𝘢𝘴 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝘵𝘰 𝘥𝘰 𝘸𝘪𝘵𝘩 𝘣𝘭𝘰𝘤𝘬𝘤𝘩𝘢𝘪𝘯 𝘵𝘦𝘤𝘩𝘯𝘰𝘭𝘰𝘨𝘺, 𝘢𝘯𝘥 𝘧𝘶𝘳𝘵𝘩𝘦𝘳𝘮𝘰𝘳𝘦, 𝘺𝘰𝘶𝘳 𝘣𝘰𝘰𝘬𝘮𝘢𝘳𝘬𝘴 𝘢𝘯𝘥 𝘴𝘦𝘵𝘵𝘪𝘯𝘨𝘴 𝘢𝘳𝘦 𝘬𝘦𝘱𝘵 𝘭𝘰𝘤𝘢𝘭 𝘵𝘰 𝘺𝘰𝘶𝘳 𝘣𝘳𝘰𝘸𝘴𝘦𝘳; 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘭𝘰𝘨𝘨𝘦𝘥 𝘵𝘰 𝘢𝘯𝘺 𝘴𝘦𝘳𝘷𝘦𝘳.</h6>
+
+	<p>⠀Corny as you'll find out I am, the <i>meta</i>verse isn't the only <i>meta</i>phor with which I derive meaning out of the idea of Plexos. Another one, more plainly, comes directly from its name: the <b>nervous system</b>.</p>
+
+	<p>⠀Just the same way the file-system makes a great metaphor for a tree, Plexos makes a great metaphor for a <a href="https://en.wikipedia.org/wiki/Nerve_plexus">nerve plexus</a>. The way I see it, each of us has their own <i>"meta plexus"</i> on the greater web; multiple in fact. Networks of pages we often surf around (think of a hyperlink as an axon, clicking it as an <a href="https://en.wikipedia.org/wiki/Action_potential">action potential</a>), be it Reddit, Tumblr, a blog or whatever else, as well as all of our user profiles and webpages, our spaces for personal expression and exposition. Here's a decent index of mine → <a href="https://linktr.ee/pentacoro">Norrum Plexus</a>.</p>
+
+	<p>⠀Fun fact: I thought of further getting the point across by naming the root folder <i>"cord"</i>, as in spinal cord, and calling the separate desktops <i>"vertebrae"</i>. Ultimately I figured this nomenclature would feel way too visceral for comfort, so I opted for <i>cores </i>and <i>vertices</i>, which come really close to the original intention while still making a lot of sense within the same contexts... and they also sound cooler I think.</p>
+
+	<h2>This Blog Entry Took Me 7 days</h2>
+
+	<p>⠀To keep it 100, I actually wanted to post this last 28th of January, as it would have been Plexos' 1 year anniversary since its first commit! 02/02/2022 is still a cool beginning for the blog though, so at least there's that.</p>
+
+	<p>⠀One of the reasons it took me so long was that the second entry, "Sources Of Inspiration", was supposed to be part of this first entry, but I decided to split them into two in the end, both because it would've otherwise been too long of a read and also to have at least 2 list items at the main page on day one lol.</p>
+
+	<p>⠀Soon I'll begin writing more entries showing and detailing all of the features Plexos already has (more than I showed here) until I've essentially covered everything, and then I'll begin posting updates as is expected with devlogs.
+</p>
+
+	<p>⠀If you want to talk about the project and give me suggestions, tips, and perhaps even music recommendation; anything related to what I talked about here AND sources of inspiration, I invite you onto my discord at → <a href="https://discord.gg/dxvScfqDRA">https://discord.gg/dxvScfqDRA</a></p>
+
+	<p>⠀I hope I made a fun read, and also that you're as excited as I am for an app like Plexos. ❤️❤️❤️</p>
+
+	<p>⠀Thank you very much for reading!</p>
+
+	<p><b>- <i>Pentacoro</i></b></p>
+
+	<p>⠀</p>
+
+</article>

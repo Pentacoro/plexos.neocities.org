@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="scripts/script.js"></script>
+    <script>
+        let jsonArti = ajaxReturn("GET", "/articles/article"+getValue("blog")+".json")
+        jsonArti.then(jsonData => {
+            document.getElementsByTagName("title")[0].innerHTML += JSON.parse(jsonData).name
+            document.getElementsByTagName("header")[0].children[0].children[0].innerHTML += JSON.parse(jsonData).name
+
+            let prev = document.createElement("meta")
+            prev.setAttribute("property", "og:image")
+            prev.setAttribute("content", JSON.parse(jsonData).imag)
+
+            document.getElementsByTagName("head")[0].appendChild(prev)
+        })
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/norrum.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plexos / </title>
+</head>
+<body>
+    <div id="background"></div>
+
+    <div id="container">
+        <div id="column">
+            <header>
+                <div>
+                    <h2>Plexos / </h2><button onclick="alert('I see how it is')"></button>
+                </div>
+                <nav>
+                    <a href="/">Index</a>
+                    <a href="links.html">My Links</a>
+                    <a href="about.html">About Me</a>
+                </nav>
+            </header>
+            <main id="editorjs"></main>
+        </div>
+    </div>
+
+    <script src="scripts/editor.js"></script>
+    <script src="addons/attaches.js"></script>
+    <script src="addons/checklist.js"></script>
+    <script src="addons/embed.js"></script>
+    <script src="addons/footnotes.js"></script>
+    <script src="addons/header.js"></script>
+    <script src="addons/inline-code.js"></script>
+    <script src="addons/link.js"></script>
+    <script src="addons/nested-list.js"></script>
+    <script src="addons/quote.js"></script>
+    <script src="addons/raw.js"></script>
+    <script src="addons/simple-image.js"></script>
+    <script src="addons/table.js"></script>
+    <script src="addons/warning.js"></script>
+
+    <script src="scripts/scriptEntry.js"></script>
+</body>
+</html>
