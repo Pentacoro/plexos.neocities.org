@@ -82,6 +82,7 @@ for (section of array) {
     for(let item of section.link) {
         let newLink = document.createElement("a")
         newLink.setAttribute("class", "link")
+        newLink.setAttribute("target", "_blank")
         newLink.setAttribute("href", item.data[0])
 
         if (section.link.indexOf(item) < 2 && !section.rows) newLink.classList.add("marginRight")

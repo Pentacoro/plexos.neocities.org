@@ -121,15 +121,19 @@ nav>a {
 nav>a:hover {
     background-color: rgb(162, 166, 177);
 }
+footer {
+    padding: 1em 1em 0 1em;
+}
 
 /*--------------------*//*--------------------*//*--------------------*/
-
+#container {
+    height: 100vh;
+    justify-content: start;
+}
 #editorjs {
     min-height: 90%;
     padding: 1em 1em 0 1em;
 
-    display: flex;
-    flex-direction: column;
     background-color: white;
 
     overflow: auto;
@@ -142,11 +146,60 @@ nav>a:hover {
     text-align: justify;
     text-justify: inter-word;
 }
-#container {
-    height: 100vh;
-    justify-content: start;
-}
+
 /*--------------------*/
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 1em 0 1em;
+}
+
+article>*{
+    margin-bottom: 13px;
+    margin-left: 34px;
+    margin-right: 34px;
+    width: 650px;
+}
+article>*::selection, article>*>*::selection, article>*>*>*::selection{
+    background-color: #d4ecff;
+}
+.winbody {
+    background-color: #f2f2f2;
+    border: dotted #526c7a 2px;
+    border-top: 0px;
+}
+.signature {
+    line-height: 20px;
+    color: rgb(95, 95, 95);
+}
+footer {
+    display: flex;
+    justify-content: center;
+
+    border-top: rgb(95, 95, 95) solid 1px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 0px 0;
+}
+h1 {
+    font-size: 2em;
+}
+h6 {
+    color: #777777;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 2px;
+}
+p, ol, ul {
+    line-height: 1.6em;
+    outline: none;
+    hyphens: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+p {
+    font-size: 1.1em;
+}
 .article {
     height: 300px;
     display: grid;
@@ -156,8 +209,11 @@ nav>a:hover {
     text-decoration: none;
     cursor: pointer;
 
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border-left: #00A2E8 20px solid;
+}
+.article:nth-last-child(2) {
+    margin-bottom: 0px;
 }
 a:hover>.content{
     border-top: #7ba4bd solid 2px;
@@ -279,6 +335,18 @@ a:hover>.content{
     #column {
         width: 80%;
     }
+    article>*{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 650px;
+    }
+} /*----------------------*/
+
+/*THIN DESKTOP*/
+@media (max-width: 926px){
+    article>*{
+        width: 500px;
+    }
 } /*----------------------*/
 
 /*TABLET*/
@@ -299,6 +367,11 @@ a:hover>.content{
     }
     .linkBox.rows>.link>span {
         font-size: 1.5em;
+    }
+    article>*{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
     }
 } /*----------------------*/
 
@@ -334,6 +407,10 @@ a:hover>.content{
     }
     .linkBox.rows>.link {
         grid-template-columns: 76px auto;
+    }
+    article{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
 } /*----------------------*/

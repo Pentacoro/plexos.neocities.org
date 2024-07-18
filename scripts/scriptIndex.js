@@ -44,7 +44,7 @@ function getNextArticle(num) {
             newSpan1.appendChild(newH1)
             newSpan2.appendChild(newH4)
 
-            document.getElementById("editorjs").appendChild(newArticle)
+            document.getElementById("entryList").appendChild(newArticle)
         }
 
         let newEnder = document.createElement("div")
@@ -65,7 +65,7 @@ function getNextArticle(num) {
         newEnder.appendChild(newEndline2)
         newEndtext.appendChild(newSpan)
 
-        document.getElementById("editorjs").appendChild(newEnder)
+        document.getElementById("entryList").appendChild(newEnder)
     })
 }
 

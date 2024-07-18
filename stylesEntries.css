@@ -129,22 +129,22 @@ nav>a:hover {
 }
 #editorjs {
     min-height: 90%;
+    padding: 1em 1em 0 1em;
 
-    display: flex;
-    flex-direction: column;
     background-color: white;
 
     overflow: auto;
 }
+
+/*--------------------*/
 article {
-    height: 100%;
-    padding: 2em 2em 0 2em;
+    padding: 1em 1em 0 1em;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    overflow: auto;
+    overflow: hidden;
 }
 article>*{
     margin-bottom: 13px;
@@ -154,6 +154,23 @@ article>*{
 }
 article>*::selection, article>*>*::selection, article>*>*>*::selection{
     background-color: #d4ecff;
+}
+.winbody {
+    background-color: #f2f2f2;
+    border: dotted #526c7a 2px;
+    border-top: 0px;
+}
+.signature {
+    line-height: 20px;
+    color: rgb(95, 95, 95);
+}
+footer {
+    display: flex;
+    justify-content: center;
+
+    border-top: rgb(95, 95, 95) solid 1px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 0px 0;
 }
 h1 {
     font-size: 2em;
@@ -188,7 +205,7 @@ figcaption {
     margin-top: 8px;
     width: 100%;
     color: #2b2b2b;
-    background-color: #e6e6e6;
+    background-color: #dadada;
     font-size: .8em;
     padding: .4em;
     border-radius: 8px;
@@ -219,7 +236,6 @@ span {
 }
 /*--------------------*/
 
-/*--------------------*/
 #list {
     padding-bottom: 1em;
 }
@@ -277,7 +293,28 @@ span {
 .marginRight{
     margin-right: 1em;
 }
+
 /*--------------------*/
+#ender {
+    display: flex;
+    margin: 10px 0 10px 0
+}
+#ender>.endline {
+    flex-grow: 2;
+    height: 1px;
+    margin: auto 0 auto 0;
+    background-color: rgb(95, 95, 95);
+}
+#ender>.endtext {
+    flex-grow: 0;
+    margin: 0 1em 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ender>.endtext>span {
+    color: rgb(95, 95, 95);
+}
 
 /*DESKTOP*/
 @media (max-width: 1024px){
