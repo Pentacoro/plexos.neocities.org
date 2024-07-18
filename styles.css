@@ -129,6 +129,7 @@ footer {
 #container {
     height: 100vh;
     justify-content: start;
+    overflow: hidden;
 }
 #editorjs {
     min-height: 90%;
@@ -252,7 +253,7 @@ a:hover>.content{
 }
 /*--------------------*/
 #list {
-    padding-bottom: 1em;
+    padding-bottom: 10px;
 }
 .link:hover{
     border-top: #7ba4bd solid 2px;

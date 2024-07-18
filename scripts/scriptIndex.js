@@ -18,7 +18,7 @@ function getNextArticle(num) {
             let newArticle = document.createElement("a")
             newArticle.setAttribute("class", "article")
             //newArticle.setAttribute("href", "/entry.html?blog="+array[i].data)
-            newArticle.setAttribute("href", "/entries/blog"+array[i].data+".html")
+            newArticle.setAttribute("href", getValue("iframed")=="true" ? "/entries/blog"+array[i].data+".html?&iframed=true" : "/entries/blog"+array[i].data+".html")
     
             let newImage = document.createElement("div")
             newImage.setAttribute("class", "image")

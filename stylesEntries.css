@@ -126,6 +126,7 @@ nav>a:hover {
 #container {
     height: 100vh;
     justify-content: start;
+    overflow: hidden;
 }
 #editorjs {
     min-height: 90%;
