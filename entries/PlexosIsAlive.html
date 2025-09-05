@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../scripts/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Plexos / Plexos Is Alive" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="../articles/article3.png" />
+    <meta property="og:description" content="Yes, I never stopped working on it.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@Pentacoro">
+
+    <link rel="icon" type="image/png" href="../assets/norrum.png">
+    <link rel="stylesheet" href="../stylesEntries.css">
+    <title>Plexos / Plexos Is Alive</title>
+</head>
+<body>
+    <div id="background"></div>
+
+    <div id="container">
+        <div id="column">
+            <header>
+                <div>
+                    <h2>Plexos / Plexos Is Alive</h2><button onclick="alert('I see how it is')"></button>
+                </div>
+                <nav>
+                    <a href="/">Index</a>
+                    <a href="/links.html">My Links</a>
+                    <a href="/about.html">About Me</a>
+                </nav>
+            </header>
+            <main id="editorjs">
+                <article><h1>Plexos Is Alive</h1>
+
+                    <p>Yes, I never stopped working on it. I did fail on my original intention with this devlog to keep up updates as development went on, and I also way underestimated the release time, and for that I'm actually sorry, mostly to myself but also to the few readers that might have been hooked enough to care about Plexos. In that sense, I'm glad I haven't done much to publicise Plexos up to this point, so I shouldn't have left too many people hanging, but nonetheless, here's to you.</p>
+
+                    <figure>
+                        <img src="./media/wplace200.png">
+                        <figcaption>Final extract of Plexos's Wplace collaborative billboard off the coast of <a href="https://wplace.live/?lat=-34.755&lng=-57.651&zoom=13.5">Buenos Aires</a>.</figcaption>
+                    </figure>
+
+                    <h2>So, What Is This About?</h2>
+
+                    <p>The purpose of this entry is two-fold: on the one hand, I expect it to be a healthy exercise for myself to visualise the current state of development through the creation of this article, and in having fun with the process of considering the reader while writing an interesting blog, to retake (or rather kickstart) the habit of updating more frequently.</p>
+
+                    <p>Primarily, of course, I want to update <i>you</i> on the current state of Plexos, as well as talk about its overall trajectory in broad strokes, starting from the very beginning, occasionally diving into the details of certain topics and features, and even sometimes getting a bit personal while still trying to steer the text into a steadily pleasant flow, such that you get both a fun read and the best idea of where Plexos is now. But first...</p>
+
+                    <h2>Where Plexos Was Then</h2>
+
+                    <p>The genesis of what would become Plexos dates back to mid 2020, a couple of months before the <a href="https://github.com/Pentacoro/pentacoro.github.io/commit/eba0213017d098da59d3851c8eb7aa94abc36e3f">first commit</a> in January 2021 (very adorably titled "commit1"), as a playground to test my freshly acquired programming knowledge. It does surprise me that it took me so long to learn to code, and that it was with JS. What isn't surprising is what happened immediately after.</p>
+
+                    <figure>
+                        <img src="https://thumb.gyazo.com/thumb/1920_w/eyJhbGciOiJIUzI1NiJ9.eyJpbWciOiJfMTBjYzhlOTkwYWZmNGIzNTM1YzhkMmM3ZWE1NmM0MTEifQ.dd8hkJC5roUOTizsTMeOJ7kFWFi8NuKS4fjOKVD_M20-gif.gif" height="320px" style="object-fit: cover;object-position: 0px -6px;" >
+                        <figcaption>One of the oldest gifs playing around with an early implementation of movable icons.</figcaption>
+                    </figure>
+
+                    <p>As I've shockingly failed to mention with my first article <a href="https://blog.plexos.app/entries/AnIntroductionToPlexos">An Introduction To Plexos</a>, and if it wasn't obvious, this app was my very first personal coding project, the implications of which should be immediately obvious to the experienced developer. While I consider myself a humble person (I don't care how oxymoronic that is to say) and in fact I always knew Plexos could have been difficult in ways I wasn't prepared for, I have come to appreciate the commonly circulated advice to avoid taking on one's "dream project" as our first development endeavour; a piece of advice that at the time failed to reach me.</p>
+
+                    <p>Unsurprisingly, Plexos began without a name, but more worryingly it began without a clear goal. As written on <a href="https://blog.plexos.app/entries/SourcesOfInspiration">Sources of Inspiration</a>, Plexos was conceived under the influence of much of what came of the popularisation of the <a href="https://aesthetics.fandom.com/wiki/Vaporwave">vaporwave aesthetic</a>, as well as what I consider the unbelievably gone unnoticed birth of the <a href="https://store.steampowered.com/curator/41892787">OS genre of games</a>. In that context, 20 years young me almost impulsively set out to make a webapp with the sole purpose of achieving the GUI functionality and aesthetics seen under the design philosophies of the <a href="https://en.wikipedia.org/wiki/Desktop_metaphor">desktop metaphor</a>. To what utility? None, really; I wasn't thinking that far ahead.</p>
+
+                    <figure>
+                        <img src="https://thumb.gyazo.com/thumb/1920_w/eyJhbGciOiJIUzI1NiJ9.eyJpbWciOiJfZDMzYjBlNjZiZGFiMzBlZWNmMTFmMGEwOGE2NzQ1YTkifQ.tietGdjn7S8vziM9vjX2QEBDCU6U-DKp3jPhRBLB_Gg-gif.gif" height="320px" style="object-fit: cover;object-position: 0px -6px;" >
+                        <figcaption>Another authentically old (and hypnotizing) gif testing the responsiveness of the grid and auto margin.</figcaption>
+                    </figure>
+
+                    <p>It wasn't until a couple of months after more or less finishing some desktop functionality that I began machinating what the actual purpose of Plexos as an application would be, which I nowdays pitch as a bookmark manager (though there's more to it, I'll leave it for future blogs). I must say though, even in this early, sketchy and messy stage I did nail the algebra on a very cool responsive grid function for the desktop, whose code went mostly untouched to this day, only improved by some optimisations and ultimately perfected by the time I updated my admittedly hideous first attempt at a grid settings app.</p>
+
+                    <h2>I Like Grids</h2>
+
+                    <p>This grid was my proudest feature at the time since, of course, there wasn't much of anything else to the app than the desktop, moving icons around, etc. The grid presented a fun challenge that made me think of both the mathematics of grid dimensions <i>and</i> the edge cases of icon repositioning; particularly ones involving conflicts between multiple icons being shifted simultaneously. </p>
+
+                    <figure>
+                        <div style="
+                            position: relative;
+                            width: 100%;
+                            padding-bottom: calc(320 / 650 * 100%);
+                            background-color: #1f1f22;
+                            overflow: hidden;
+                            ">
+                        <iframe width="906" height="320" src="https://www.youtube.com/embed/XnYDJa-yAHE?autoplay=1&amp;mute=1&amp;controls=0&amp;showinfo=0&amp;disablekb=1&amp;enablejsapi=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;loop=1&amp;list=PL8sj7hrqZNQXYXjS5gX-pOmZQ7WT3IaGU&amp;playsinline=1&amp;rel=0&amp;widgetid=1" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; modestbranding; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        style="
+                            position: absolute;
+                            pointer-events: none;
+                            top: -77.5%;
+                            left: 7%;
+                            height: 300%;
+                            width: 86%;
+                            "></iframe>
+                        </div>
+                        <figcaption>Surprisingly specific recording I found showcasing the resolution of icon repositioning conflicts.</figcaption>
+                    </figure>
+                    
+                    <p>Once that first grid settings app was operational I straight up just could <b>not</b> shut up about it, and anyone that knows me in person could tell you, but it was partly because I felt it made Plexos stand out from the rest of the web desktops I had seen, as none featured anything resembling the level of complexity Plexos did (just talking about the desktop itself); most don't have a grid at all, and mine was not only responsive but customizable AND done with plain vanilla javascript.</p>
+
+                    <p>Making a brief time-jump here: the current state of the grid settings app represented another big milestone for me, though for different reasons this time. For one thing, it served to refine the visual identity of the first and planned default theme for Plexos "Hyper", meant to represent the "4th generation" of Plexos' evolution throughout what would have hypothetically been the timespan between releases if, instead of being just a cute webapp, it were a series of operating systems dating back to the 80's (I will go more on detail about this on a future article).</p>
+                    
+                    <figure>
+                        <img src="https://i.gyazo.com/666640832266b036e9eb7ebcc42f5659.gif">
+                        <figcaption>My admittedly hideous first attempt at a grid settings app (tall) against its latest version (wide).</figcaption>
+                    </figure>
+
+                    <p>Mainly, the making of the final version of the grid settings app worked as a gateway to front-end templates. Just taking a glance at it, you can spot how similar it looks to the classic Windows 95's <a href="https://lh4.googleusercontent.com/proxy/r4GVchjMzrdNbCzk1EmprP1g2F1dwYEM3Hu9trdS0174L-PpXtuJ5pW8_GrpEJSRRsqlA4g74gIdpf6Ps5iUoJYk-8JfpqGyeT8iHBXb_ZsvNZ8T18gnBA">display properties window</a>, and yes! That was a very obvious source of inspiration, but moreover, notice how it looks like any other properties window; <b>that</b> was my eureka moment. I made a properties app template where I could hook this type of "tabs header - accept/cancel/apply footer" front-end to any JS object that would represent any configurable properties, and I've already recycled it for my file properties window.</p>
+                        
+                    <p>I encourage you to check both out at <a href="https://plexos.app">plexos.app</a>, the grid app by right clicking on the desktop and then on <b>Grid > Grid Settings</b>, and the file properties window by right clicking any file and then on <b>Properties</b>.</p>
+
+                    <h2>Locking In</h2>
+
+                    <p>My success with the grid settings app sure was a motivator, but soon enough I'd find out that the realisation of all my goals with the app would require an increased level of focus for an even longer period of time than I was expecting; a period during which I got a cool 9-5! Which, of course, did slow me down, at least before I quit it.</p>
+                        
+                    <p>Neither was I expecting having to end not 1 relationship, not 2, but 3 (three!) simultaneous relationships at the time, and being me the one to end them (one by one!) for the first time in my life (unexaggerably stressful!). Something else was gonna go here at the end of this paragraph, something relevant to this, but if <i>they</i> found out we would all be dead, so just rest assured I have found my peace.</p>
+
+                    <p>Suffice to say life has kept be busy, and my github commit history reflects it, yet I'm very happy to have committed to this project, in a fashion never before seen out of me through the myriad of "dream projects" I ventured upon throughout my life since I was like 3, with stuff like RollerCoaster Tycoon megaparks, custom Sims 2 neighbourhoods, Minecraft map collections, then at least a couple <a href="https://www.newgrounds.com/portal/view/996341">stickfighting flash animations</a> and a <a href="https://www.youtube.com/watch?v=G7D7fBtNIDk">beat'em up game</a>. The Plexos lock in phase was (and still is) real, though it was understandably spread out to fit within my unstable early 20s, also leaving some space for a few smaller scale projects <a href="https://discord.com/channels/888176110603468821/1021404181912895610/1021640774967894027">here</a> and <a href="https://discord.com/channels/888176110603468821/916092597028663296/1243004674236223588">there</a>, but to have stuck with a single long-term project for this long is something I am personally proud of, since before Plexos I didn't even know if I could ever.</p>
+
+                    <figure>
+                        <img src="https://thumb.gyazo.com/thumb/1920_w/eyJhbGciOiJIUzI1NiJ9.eyJpbWciOiJfNGZiOGNkMzgyNmQxZTI2MTBhMTllNWYzYTJkNjYxMmQifQ.MuYSGWEY9ivy-9MlVyWYV1YgxjPjx31lGNKUUegOAg4-gif.gif" height="320px" style="object-fit: cover;object-position: 0px -6px;" >
+                        <figcaption>Testing the explorer's error handling through popups.</figcaption>
+                    </figure>
+
+                    <p>So I kept working on everything else that composes the WIMP GUI under the newly set pretence of making a useful bookmarker and web content viewer: I added windows, tasks, error popups with embedded code, AJAX app launchers, the filesystem, the explorer app and lots more I might be forgetting. Slowly but surely Plexos kept growing... until it didn't; soon enough I found myself needing to hit the breaks and make a much needed visit to the pits. I was lucky to make this assessment in the early laps, actually, 'cause I was heading towards what would have been a race ending crash (someone that I know will read this likes F1 🏎️).</p>
+
+                    <h2>The Pit Stop</h2>
+
+                    <p>While I was having great success incorporating hot new features that shaped the early versions of Plexos, in parallel followed my code-learning journey, the progression of which eventually allowed me to recognise how abysmally unscalable and unmaintainable my code had been turning out. It was all running phenomenally when deployed, yet I gradually began noticing how all that early work, powered by sheer beginner enthusiasm, was insidiously cementing into what would inevitably turn out to be an apocalyptically unstable mess. I was building Plexos, a high complexity application, on unacceptably amateur foundations, and it was due for a health checkup.</p>
+
+                    <p>Much of my time developing Plexos in late 2023 and throughout 2024 was dedicated to refactoring and revisioning the app's logic at the macro level. The biggest change was a codebase wide retroactive implementation of modules and imports, before which (cringe warning) everything operated on the global scope (which is <b>very</b> embarrassing to admit). Other changes included general logic atomisation for old functions and interactions, thinking of Plexos' system structure as a development framework and as such making future app development as easy as possible, adapting the few existing apps to the new structure, making templates (new grid app was here) and swapping localStorage for IndexedDB. </p>
+
+                    <p>Around this was the time I began to dabble with AI language models to test if I could make any use of them, and my first Plexos related query to a language model wasn't directy asking for code but rather asking how to balance the fun of developing new features with the then pressing responsibility of keeping the codebase healthy. It gave out quite useful advice I must say; it encouraged me to try and sparingly work on new features where they may fit within the ongoing maintenance, and so I did! I mean, surely I could have come up with the idea myself, but sometimes you just need someone else to tell you. So during this time I also implemented components, added a couple of them, task event emitters and listeners, the metafile creator app and a registry that works through <i>proxy files™</i> meant to store additional app and file metadata like, for example, the position and size parameters from the last window instance closed.</p>
+
+                    <figure>
+                        <img src="https://i.gyazo.com/3004ecd13b3168ea10270e7b06b74607.gif">
+                        <figcaption>Ta-daaa! 🎉</figcaption>
+                    </figure>
+
+                    <p>And sure, I admit that making windows appear at the same spot you closed them at last time isn't that spectacular for a new feature; this was no doubt a determinate period of stagnation in terms of noteworthy updates, and to be frank I'm not out of the woods just yet. So, to wrap up, let's get to the present day.</p>
+
+                    <h2>Where Plexos Is Now</h2>
+
+                    <p>To my relief, macro maintenance is almost over. The foundations are now solid, and refactoring is mostly minimal. The codebase is looking healthier and <i>much</i> chunkier, overwhelmingy so if I stare at it too long; it's grown a lot, and I'm very happy that I took the time to fix it.</p>
+
+                    <p>Since the last few months of 2024 up until today, I've been on a steady cycle of <b>adding</b>, not <i>changing</i>, structural system functionality that leads me to require implementing more structure, itself requiring more structure and so on, but the last lap <b>is</b> approaching, and I can see finish line (and I guess I'll just keep with the racing metaphor lol 🏁). Crossing it means returning to a routine of frequent noteworthy new features, once the bases have been fully laid out, which of course also means more fun an interesting devlog entries.</p>
+
+                    <p>Yeah... that was indeed the reason I haven't made any updates up until now. I figured it would have been way too boring both to read and write about how awful my old code was and how much better it is now (and I'm trying to be polite to my past self here). That's why I thought <b>this</b> was the perfect time to come back to the blog and start anew with an honest promise to maintain <i>some</i> posting regularity.</p>
+
+                    <figure>
+                        <img src="https://i.gyazo.com/9d2e381acbe7c0e69cf954a8aa120f5b.gif">
+                        <figcaption>Adding auto metafile creation when pasting URLs was pretty nifty though.</figcaption>
+                    </figure>
+
+                    <p>So, for thoroughness's sake, and since I can't update the in-app <code class="inline-code">Checklist.txt</code> file because I'm in fact currently working on a new way to handle saving files (I should use a dev branch, I know), here's the latest stuff I've been working on:</p>
+
+                    <ul>
+                        <li>Command Pattern for System Queries that should require User Permission</li>
+                        <li>Application and File User Permissions/Prohibitions stored on Proxy File Registries</li>
+                        <li>File-System Change-Log to apply (store) changes from Active Core to Local Core</li>
+                        <li>Special handling for the simplification of complex active files like Proxy Files</li>
+                    </ul>
+
+                    <p>As you can see, most of what I'm working on has to do with the registry system in one way or the other, which I believe once finished will make my life so unbelievably easier development will go faster than EVER. The registry truly is the last <i>actually</i> challenging implementation left for me to work on; it's all smooth sailing after it's done, and it hypes me up.</p>
+
+                    <h2>Where Plexos Will Be</h2>
+
+                    <p>Once the registry structure is done I'll make a blog explaining how it works, what it's used for and what it can do. I'll also immediately begin working on the few last features that Plexos lacks to enter what could be considered a sort of "alpha" version for everyone to finally try and possibly begin using and have fun with. Some of these features are:</p>
+
+                    <ul>
+                        <li>Task Bar, planned to be customizable <i>and</i> come with a few presets</li>
+                        <li>Start Menu, consequentially</li>
+                        <li>Startup Routines, also customizable</li>
+                        <li>Content Visualizers, specifically the image viewer and media player</li>
+                        <li>System Settings, a sort of "control panel" to configure your Plexos instance</li>
+                    </ul>
+
+                    <p>With those done, I believe Plexos' most superfitial layer of utility will be complete (<i>for the most part</i>) and apt for general use. These wont be hard to implement, in fact I could have implemented them years ago, but they were deprioritized when I got to the pit stop phase, so they'll be the first ones to be picked up once I get the engine up and running again.</p>
+
+                    <p>I will avoid making the same past mistakes and set naive ETAs; Plexos is not my job... though it could be! I've made myself a <a href="https://ko-fi.com/norrum">Ko-Fi page</a> where I'll accept donations of all quantities! Thank you in advance for anyone donating; make sure to leave a message!</p>
+
+                    <p>While I do not expect anyone to donate <i>just</i> yet given the lackluster state of both the app and this devlog, I'll be steadily working on both, <i>as well as</i> a YouTube video I've been planning that indeed has a lot to do with my app, though not as its main focus but rather a relevant addition to what's going to be its actual topic. A topic that will also receive its own blog article and... well, perhaps even require me to remodel this whole website a little bit. Suscribe to my <a href="https://www.youtube.com/@NorrumPlexus">Norrum Plexus</a> channel if you don't want to miss it!</p>
+
+                    <figure>
+                        <img src="https://i.gyazo.com/2a397df76805ded9cef0304d2367c85e.jpg">
+                        <figcaption>Got a modest amount of videos already in there, if you're curious.</figcaption>
+                    </figure>
+
+                    <p>For the time being, I'll keep working on Plexos at a steady pace, and you can expect the next blog entry for next month. It's gonna be a colourful one! Remember to join my discord for questions, suggestions and general discussions at → <a href="https://discord.gg/dxvScfqDRA">https://discord.gg/dxvScfqDRA</a></p>
+
+                    <p>Thank you for your patience! ❤️❤️❤️</p>
+
+                    <p><b>- <i>Pentacoro</i></b></p>
+
+                </article>
+                <footer>
+                    <span class="signature"> ▌◥▐<br> ▌◣▐<strong>  O R R U M</strong><br>P⠀ L⠀ E⠀ X⠀ U⠀ S<br></span>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script defer src="../scripts/scriptDefer.js"></script>
+</body>
+</html>

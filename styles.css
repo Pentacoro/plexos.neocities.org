@@ -204,7 +204,7 @@ p {
 .article {
     height: 300px;
     display: grid;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 70% auto;
 
     color: white;
     text-decoration: none;
@@ -224,6 +224,7 @@ a:hover>.content{
 .image {
     background: #444444;
     background-size: cover;
+    background-position: 50% 25%;
 }
 .content {
     border-top: #6e8a9b solid 2px;

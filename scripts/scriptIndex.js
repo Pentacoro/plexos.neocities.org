@@ -10,15 +10,12 @@ function getNextArticle(num) {
         array.push(json)
 
         getNextArticle(num+1)
-
     }).catch(error => {
-        console.log("there are "+(num-1)+" blog entries")
-
         for(i = num-2; i > -1; i--) {
             let newArticle = document.createElement("a")
             newArticle.setAttribute("class", "article")
             //newArticle.setAttribute("href", "/entry.html?blog="+array[i].data)
-            newArticle.setAttribute("href", getValue("iframed")=="true" ? "/entries/blog"+array[i].data+".html?&iframed=true" : "/entries/blog"+array[i].data+".html")
+            newArticle.setAttribute("href", getValue("iframed")=="true" ? "/entries/"+array[i].name.replaceAll(" ","")+".html?&iframed=true" : "/entries/"+array[i].name.replaceAll(" ","")+".html")
     
             let newImage = document.createElement("div")
             newImage.setAttribute("class", "image")

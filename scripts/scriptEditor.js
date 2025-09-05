@@ -1,4 +1,13 @@
-let jsonBlog = ajaxReturn("GET", "/entries/blog0.json")
+window.onbeforeunload = function(e) {
+    let message = "Stop!"
+    // Standard way to trigger the confirmation dialog
+    e.preventDefault();
+    // Some browsers require returnValue to be set
+    e.returnValue = message
+    return message
+}
+
+let jsonBlog = ajaxReturn("GET", "/entries/-blog0.json")
 
 jsonBlog.then(jsonData => {
     const editor = new EditorJS({
@@ -64,7 +73,7 @@ jsonBlog.then(jsonData => {
         editor.save().then((outputData) => {
             console.log('Article data: ', outputData)
             
-            downloadObjectAsJson(outputData, "blog")
+            downloadObjectAsJson(outputData, "-blog")
         }).catch((error) => {
             console.log('Saving failed: ', error)
         })
