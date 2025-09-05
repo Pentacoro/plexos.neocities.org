@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        *{
+        * {
             margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: black; 
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        figcaption {
+            margin-top: 8px;
+            width: 100%;
+            color: #2b2b2b;
+            background-color: #dadada;
+            font-size: .8em;
+            padding: .4em;
+            border-radius: 8px;
         }
     </style>
     <title>Ruffle Player</title>
 </head>
 <body>
-    <div style="
+    <div class="container" style="
         display: flex;
         width: 100vw;
         height: 100vh;
@@ -19,7 +43,11 @@
         justify-content: center;
         background-color: black;
         ">
-        <embed src="https://archive.org/download/karate-ninja-vs-capoeira-escena-1/Karate%20%26%20ninja%20vs%20Capoeira_Escena%201.swf" width="550" height="400">
+        <figure>
+            <embed src="./karate & ninja vs capoeira_escena 1.swf" width="550" height="400">   
+            <figcaption>My very first flash animation, dating back to 2011 made by 11 year old me.</figcaption>
+        </figure>
+         
     </div>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
