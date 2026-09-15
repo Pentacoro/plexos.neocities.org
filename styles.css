@@ -104,25 +104,40 @@ header>div>button:active {
     border-style: solid;
     border-width: 2px;
 }
-nav {
-    width: 100%;
-    height: 20px;
-    background-color: rgb(195, 203, 221);
 
-    display: flex;
-    flex-direction: row;
-}
-nav>a {
-    color: rgb(36, 36, 36);
-    height: 20px;
-    padding: 0 6px 0 6px;
-    text-decoration: none;
-}
-nav>a:hover {
-    background-color: rgb(162, 166, 177);
-}
 footer {
     padding: 1em 1em 0 1em;
+}
+
+nav {
+    top: 0px;
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(195, 203, 221);
+    z-index: 100;
+
+    user-select: none;
+}
+nav>a{
+    background-color: rgb(195, 203, 221);
+    height: 20px;
+    border: 0px;
+    font-size: 1em;
+    color: rgb(90, 108, 126);
+    cursor: pointer;
+    padding-left:  .5em;
+    padding-right: .5em;
+
+    user-select: none;
+}
+nav>a:active{
+    color: rgb(123, 140, 156);
+}
+nav>a:hover{
+    background-color: rgb(162, 166, 177);
 }
 
 /*--------------------*//*--------------------*//*--------------------*/
@@ -333,7 +348,7 @@ a:hover>.content{
 }
 
 /*DESKTOP*/
-@media (max-width: 1024px){
+@media (max-width: 998px){
     #column {
         width: 80%;
     }
@@ -351,34 +366,8 @@ a:hover>.content{
     }
 } /*----------------------*/
 
-/*TABLET*/
-@media (max-width: 768px){
-    #column {
-        width: 90%;
-    }
-    .linkBox.columns>.link {
-        grid-template-columns: 30px auto;
-        width: 33.3%;
-        height: 30px;
-    }
-    .linkBox.columns>.link>span {
-        font-size: .8em;
-    }
-    .marginRight{
-        margin-right: .6em;
-    }
-    .linkBox.rows>.link>span {
-        font-size: 1.5em;
-    }
-    article>*{
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 100%;
-    }
-} /*----------------------*/
-
 /*PHONE*/
-@media (max-width: 500px){
+@media (max-width: 720px){
     #column {
         width: 100%;
     }
@@ -413,6 +402,12 @@ a:hover>.content{
     article{
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    article>*{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
     }
     
 } /*----------------------*/
